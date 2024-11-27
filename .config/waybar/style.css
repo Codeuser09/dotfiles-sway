@@ -1,0 +1,42 @@
+@import "./frappe.css";
+
+body,
+#waybar,
+/* General waybar config: */
+.main-container {
+  font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 18px;
+  color: @teal;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.5s ease-in-out;
+  border: 3px solid @teal;
+  border-radius: 20px;
+}
+
+#waybar:hover,
+.main-container:hover {
+  background-color: rgba(0, 0, 0, 0.9);  /* Slightly darker background on hover */
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#custom-pacman {
+  padding-top: 10px;
+}
+
+/* #clock {
+  padding-bottom: 10px;
+}
+*/ 
+
+#custom-time {
+  padding-bottom: 26px;
+}
+
+#battery {
+  padding-left: 5px;
+}

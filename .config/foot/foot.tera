@@ -1,0 +1,53 @@
+---
+whiskers:
+  version: 2.3.0
+  matrix:
+    - flavor
+  filename: "themes/catppuccin-{{flavor.identifier}}.ini"
+---
+[cursor]
+color={% if flavor.dark %}{{ crust.hex }}{% else %}{{ base.hex }}{% endif %} {{rosewater.hex}}
+
+[colors]
+{#
+  0 = black
+  1 = red
+  2 = green
+  3 = yellow
+  4 = blue
+  5 = magenta
+  6 = cyan
+  7 = white
+-#}
+foreground={{text.hex}}
+background={{base.hex}}
+
+regular0={% if flavor.dark %}{{ surface1.hex }}{% else %}{{ subtext1.hex }}{% endif %}
+regular1={{red.hex}}
+regular2={{green.hex}}
+regular3={{yellow.hex}}
+regular4={{blue.hex}}
+regular5={{pink.hex}}
+regular6={{teal.hex}}
+regular7={% if flavor.dark %}{{ subtext1.hex }}{% else %}{{ surface2.hex }}{% endif %}
+
+bright0={% if flavor.dark %}{{ surface2.hex }}{% else %}{{ subtext0.hex }}{% endif %}
+bright1={{red.hex}}
+bright2={{green.hex}}
+bright3={{yellow.hex}}
+bright4={{blue.hex}}
+bright5={{pink.hex}}
+bright6={{teal.hex}}
+bright7={% if flavor.dark %}{{ subtext0.hex }}{% else %}{{ surface1.hex }}{% endif %}
+
+16={{peach.hex}}
+17={{rosewater.hex}}
+
+selection-foreground={{text.hex}}
+selection-background={{overlay2 | mix(color=base, amount=0.3) | get(key='hex')}}
+
+search-box-no-match={{crust.hex}} {{red.hex}}
+search-box-match={{text.hex}} {{surface0.hex}}
+
+jump-labels={{crust.hex}} {{peach.hex}}
+urls={{blue.hex}}

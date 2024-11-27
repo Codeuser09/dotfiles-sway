@@ -1,0 +1,76 @@
+/* body */
+body {
+  background-color: #303446;
+  /* base00 */
+}
+
+/* paragraphs */
+p {
+  font-family: 'Arial, sans-serif';
+  /* Replace font variable with a common font */
+
+  font-size: 24px;
+  text-align: center;
+  color: #e78284;
+  /* base08 */
+
+  line-height: 1.35;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.RandomText {
+  font-family: 'Arial, sans-serif';
+  /* Replace font variable with a common font */
+
+  font-size: 24px;
+  text-align: center;
+  color: #e78284;
+  /* base08 */
+
+  line-height: 1.35;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.open {
+  color: #ef9f76;
+  /* base09 */
+  font-weight: bold;
+}
+
+.quickmarks {
+  color: #e5c890;
+  /* base0A */
+  font-weight: bold;
+}
+
+.history {
+  color: #a6d189;
+  /* base0B */
+  font-weight: bold;
+}
+
+.newtab {
+  color: #81c8be;
+  /* base0C */
+  font-weight: bold;
+}
+
+.close {
+  color: #8caaee;
+  /* base0D */
+  font-weight: bold;
+}
+
+/* div */
+div {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* class made for ascii art icon */
+.icon {
+  line-height: 10%;
+}
