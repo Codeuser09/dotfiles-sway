@@ -23,7 +23,7 @@
     "custom/pacman": {
         // "format": "{} ",
         "format": "{}",
-        "interval": 3600,
+        "interval": 300,
         "exec": "rpm-ostree upgrade --preview | awk '/Upgraded/ {flag=1} flag' | wc -l | tail -n 1",
         "exec-if": "exit 0",
         "on-click": "foot sh -c 'sudo rpm-ostree update; echo Done - Press enter to exit and then reboot to finish the process; read'; pkill -SIGRTMIN+8 waybar",
