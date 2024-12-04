@@ -9,10 +9,9 @@ body,
   font-size: 18px;
   color: @teal;
   opacity: 0.9;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: @base;
   transition: background-color 0.5s ease-in-out;
   border: 3px solid @teal;
-  border-radius: 20px;
 }
 
 #waybar:hover,
